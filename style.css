@@ -1,0 +1,439 @@
+html {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  }
+*,
+*::after,
+::before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 50px 100px 50px;
+}
+
+header #Fylo {
+  width: 15%;
+}
+
+header ul {
+  list-style-type: none;
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.archivos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.archivos .texto {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 90%;
+  height: 350px;
+  padding-left: 50px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: hsl(243, 87%, 12%); 
+}
+
+.archivos .texto h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.5;
+}
+
+.archivos .texto p {
+  width: 90%;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'open sans';
+}
+
+.archivos .texto form {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+input {
+  height: 45px;
+  border-radius: 5px; 
+}
+
+.archivos .texto .email {
+  width: 55%;
+  padding: 10px;
+  color: hsl(0, 0%, 75%);
+}
+
+.boton {
+  text-align: center;
+  color: white;
+  background-color: hsl(224, 93%, 58%);
+  font-weight: 700;
+  font-family: 'open sans';
+  border-color: hsl(224, 93%, 58%);
+}
+.archivos .texto .boton {
+  width: 33%;
+}
+
+.archivos .ilustration {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.archivos #curva{
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+}
+
+.location {
+  display: flex;
+  background-color: hsl(240, 75%, 98%);
+  padding: 100px 50px 100px 50px;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.location .texto h2 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.location .texto .explicacion {
+  width: 75%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.location .experiencia {
+  background-color: white;
+  width: 50%;
+}
+
+.location .ilustration {
+  width: 70%;
+  align-self: center;
+}
+
+.location .link {
+  color: hsl(170, 45%, 43%);
+  text-decoration-line: underline; 
+}
+
+.experiencia {
+  padding: 30px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 5px 10px 19px -10px hsl(238, 22%, 44%);
+  border-radius: 5px;
+}
+
+.experiencia #quotes {
+  width: 15px;
+}
+
+.experiencia p {
+  font-size: 16px;
+  width: 100%;
+}
+
+.experiencia #Kyle {
+  border-radius: 25px;
+  width: 45px;
+}
+
+.experiencia .firma {
+  display: flex;
+}
+
+.experiencia .firma #aclaracion {
+margin-left: 10px;
+}
+.experiencia .firma #name {
+  font-weight: 700;
+}
+
+.experiencia .firma #cargo {
+  font-size: 12px;
+}
+
+.access {
+  background-color: hsl(238, 22%, 44%);
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 50px 100px 50px;
+}
+
+.access .texto {
+  color: white;
+  width: 37%;
+}
+
+.access .texto h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.access form {
+  width: 50%;
+}
+
+.access form input {
+  box-shadow: 5px 10px 19px -10px hsl(243, 87%, 12%);
+}
+
+.access form #email {
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: hsl(0, 0%, 75%);
+}
+
+.access form .boton {
+  width: 30%;
+}
+
+.datos {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  height: 400px;
+  padding: 100px 50px 0px 50px;
+  display: grid;
+  grid-template-rows: 50px 200px 10px;
+}
+
+.datos #Fylo_Blanco {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.datos #a {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  flex-direction: column;
+}
+
+.datos #b {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  flex-direction: column;
+}
+
+.datos #c {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  flex-direction: column;
+}
+
+.datos #d {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.datos .attribution {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+
+.datos .box {
+  padding: 10px;
+  display: flex;
+  line-height: 40px;
+}
+
+.icono {
+  fill: white;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+header {
+  margin: 20px 20px 80px 20px;
+}
+
+header #Fylo {
+  width: 20%;
+  height: 20%;
+}
+
+header ul {
+  width: 60%;
+  font-size: 10px;
+}
+
+.archivos {
+  grid-template-columns: 100%;
+}
+
+.archivos .ilustration {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  padding: 0px 20px 0px 20px; 
+}
+
+.archivos .texto h2 {
+  font-size: 26px;
+  text-align: center;
+}
+
+.archivos .texto {
+  grid-row: 2 / 3;
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+  align-items: center;
+  height: 400px;
+}
+
+.archivos .texto p {
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  width: 80%;
+}
+
+input {
+  height: 40px;
+  border-radius: 2px;
+}
+
+.archivos .texto .email {
+  width: 100%;
+  font-size: 10px;
+  padding: 0px 0px 0px 10px;
+}
+
+.archivos .texto .boton {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.archivos .texto form {
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.archivos #curva {
+  grid-row: 3 / 4;
+}
+
+.location {
+  flex-direction: column-reverse;
+  padding: 50px 20px 100px 20px;
+}
+
+.location .ilustration {
+  width: 100%;
+}
+
+.location .texto h2 {
+font-size: 18px;
+margin-top: 70px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.location .texto .explicacion {
+width: 100%;
+height: 250px;
+font-size: 16px;
+}
+
+.location .texto .explicacion .link {
+  text-align: center;
+}
+
+.location .texto .experiencia {
+  align-self: center;
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.experiencia p {
+  font-size: 12px;
+}
+
+.experiencia .firma {
+  padding-top: 10px;
+}
+
+.access {
+  flex-direction: column;
+  text-align: center;
+}
+
+.access .texto {
+  width: 100%;
+}
+
+.access .texto h3 {
+  font-size: 18px;
+}
+
+.access .texto p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.access form {
+  width: 100%;
+}
+
+.access form .boton {
+  width: 90%;
+}
+
+.datos {
+  height: auto;
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.datos #Fylo_Blanco {
+  width: 50%;
+}
+
+.datos #d {
+  justify-content: center;
+}
+
+
+
+
+
+
+
+}
